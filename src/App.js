@@ -166,10 +166,7 @@ function App() {
                 {/* <Route path="integration" element={<Integrations />}></Route> */}
                 <Route path="apps" element={<Apps />}></Route>
                 {/* <Route path="help" element={<Help />}></Route> */}
-                <Route
-                  path="accountSetting"
-                  element={<AccountSettings />}
-                ></Route>
+                <Route path="accountSetting" element={<Coming />}></Route>
                 {/* <Route
                   path="admin-management"
                   element={<AdminManagement />}
