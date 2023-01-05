@@ -19,7 +19,7 @@ const Login = () => {
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const [token] = useToken(user || gUser)
+  const [token] = useToken(user || gUser);
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
@@ -46,6 +46,10 @@ const Login = () => {
   return (
     <div className="bg-primary">
       <div className=" w-96 mx-auto py-16">
+        <div className="flex flex-col shadow-2xl card-body w-64 rounded-lg">
+          Login Credential- <p>Email: abrakib942@gmail.com</p>{" "}
+          <p>pass: 123456</p>
+        </div>
         <div className=" shadow-2xl card-body bg-secondary rounded-lg">
           <h2 className="text-2xl font-bold text-center">Login</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
