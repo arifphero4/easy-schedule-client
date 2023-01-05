@@ -23,7 +23,7 @@ const UserEvents = ({ soloEvent, handleEditEvent }) => {
   };
   const handleCopyLink = () => {
     navigator.clipboard.writeText(
-      `https://easy-schedule-77cce.web.app/view-booking/${_id}`
+      `easy-schedule-client.netlify.app/view-booking/${_id}`
     );
     toast.success("Link copied successfully!");
   };
