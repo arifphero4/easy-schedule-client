@@ -4,12 +4,15 @@ import { toast } from "react-toastify";
 const AdminRole = ({ user }) => {
   const { name, email, role } = user;
   const makeAdmin = () => {
-    fetch(`https://easyscheduler24.herokuapp.com/users/admin/${email}`, {
-      method: "PUT",
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      },
-    })
+    fetch(
+      `https://easy-schedule-backend-production.up.railway.app/users/admin/${email}`,
+      {
+        method: "PUT",
+        headers: {
+          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        },
+      }
+    )
       .then((res) => {
         if (res.status === 403) {
           toast.error("Failed to Make an admin");

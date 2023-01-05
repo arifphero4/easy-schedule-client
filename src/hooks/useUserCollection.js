@@ -7,7 +7,9 @@ const useUserEvents = () => {
     data: usersData,
     refetch,
   } = useQuery(["usersData"], () =>
-    fetch(`https://easyscheduler24.herokuapp.com/users`).then((res) => res.json())
+    fetch(`https://easy-schedule-backend-production.up.railway.app/users`).then(
+      (res) => res.json()
+    )
   );
 
   return { isLoading, error, usersData, refetch };

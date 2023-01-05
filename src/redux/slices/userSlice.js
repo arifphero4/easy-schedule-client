@@ -2,7 +2,9 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchUsers = createAsyncThunk("users/fetchUsers", async () => {
-  const res = await axios.get("https://easyscheduler24.herokuapp.com/users");
+  const res = await axios.get(
+    "https://easy-schedule-backend-production.up.railway.app/users"
+  );
   return res.data;
 });
 

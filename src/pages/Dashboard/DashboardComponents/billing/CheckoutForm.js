@@ -22,13 +22,16 @@ const CheckoutForm = ({ amount }) => {
   const [user] = useAuthState(auth);
 
   useEffect(() => {
-    fetch("https://easyscheduler24.herokuapp.com/create-payment-intent", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({ amount }),
-    })
+    fetch(
+      "https://easy-schedule-backend-production.up.railway.app/create-payment-intent",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({ amount }),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data?.clientSecret) {
