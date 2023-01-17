@@ -11,11 +11,11 @@ Click here: https://easy-schedule.netlify.app/
 
 ## [Repo link client-side](https://github.com/arifphero4/easy-schedule-client.git)
 
-Click here: https://github.com/abrakib942/easy-schedule-client
+Click here: https://github.com/arifphero4/easy-schedule-client.git
 
 ## [Repo link server-side](https://github.com/arifphero4/easy-schedule-server.git)
 
-Click here: https://github.com/abrakib942/easy-schedule-backend
+Click here: https://github.com/arifphero4/easy-schedule-server.git
 
 ### Website overview:
 
